@@ -12,11 +12,11 @@ const AboutUs = () => {
           }
         }}
         viewport={{ once: false }}
-        className="grid grid-cols-1 md:grid-cols-4 gap-4 p-8 bg-gray-50"
+        className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-10 bg-gray-50 "
       >
         {/* Title */}
-        <div className="md:col-span-1">
-          <h2 className="text-2xl font-bold mb-4">
+        <div className="md:col-span-1 ">
+          <h2 className="text-2xl font-bold mb-4 ">
             Leading Experts in Agile Software & eCommerce Development
           </h2>
         </div>
