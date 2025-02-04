@@ -12,7 +12,7 @@ const AboutUs = () => {
           }
         }}
         viewport={{ once: false }}
-        className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-5 bg-gray-50 "
+        className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-5  "
       >
         {/* Title */}
         <div className="md:col-span-1 ">

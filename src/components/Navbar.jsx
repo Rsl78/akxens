@@ -30,7 +30,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
       // className={`fixed top-0 left-0 w-full text-white bg-transparent hover:text-black p-5`}
-      className={`fixed top-0 left-0 w-full p-5 duration-300 ${
+      className={`fixed top-0 left-0 w-full p-5 duration-300 z-50 ${
         isHovered || isScrolled
           ? "bg-white text-black"
           : "bg-transparent text-white transition-colors duration-300"
