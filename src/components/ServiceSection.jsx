@@ -49,7 +49,7 @@ const ServiceSection = () => {
           ))}
         </div>
         <div className="flex px-2 lg:px-0 flex-col lg:flex-row gap-4 lg:gap-20 lg:h-60 col-span-2 pt-5">
-          <div className="text-justify leading-7 text-lg font-medium ">
+          <div className="text-justify leading-7 lg:max-w-lg text-lg font-medium ">
             {selectedService.description}
           </div>
           <div className="flex flex-col lg:inline gap-0 ">
