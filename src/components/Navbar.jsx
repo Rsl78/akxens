@@ -1,4 +1,8 @@
+import LogoBlack from "../assets/logoBlack.svg";
+import LogoWhite from "../assets/logoWhite.svg";
+
 import { useState } from "react";
+
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -13,7 +17,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center w-[90%] mx-auto">
           <div>
             {/* Company logo */}
-            <h1>akxens</h1>
+            <img src={isHovered?LogoBlack: LogoWhite} alt="logo" className="w-30" />
+            
           </div>
           <div>
             <ul className="hidden lg:flex gap-7 ">
