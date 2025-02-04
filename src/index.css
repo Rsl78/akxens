@@ -1,40 +1,53 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
   themes: false;
 }
 
 .input-group {
   position: relative;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.input-group label {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: black;
-  padding: 0 5px;
-  pointer-events: none;
-  transition: .5s;
-}
-
-.input-group input {
-  width: 400px;
-  height: 50px;
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
   font-size: 16px;
   color: black;
-  padding: 0 10px;
   background: transparent;
   border: 1.2px solid black;
   outline: none;
   border-radius: 5px;
+  appearance: none;
+  /* Remove default dropdown arrow */
 }
 
-.input-group input:focus~label,
-.input-group input:valid~label {
+.input-group label {
+  position: absolute;
   top: 0;
+  left: 10px;
+  transform: translateY(-50%);
   font-size: 16px;
+  color: gray;
+  pointer-events: none;
+  transition: 0.3s ease all;
   background: #F3F4F6;
+  padding: 0 5px;
+}
+
+
+
+
+
+
+div select {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: gray;
 }
