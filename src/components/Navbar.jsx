@@ -16,7 +16,7 @@ const Navbar = () => {
             <h1>akxens</h1>
           </div>
           <div>
-            <ul className="hidden md:flex gap-7 ">
+            <ul className="hidden lg:flex gap-7 ">
               <li
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
