@@ -1,6 +1,15 @@
+import { useState } from "react";
+
 const Navbar = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
     return (
-      <nav className="fixed top-0 left-0 w-full text-white bg-transparent hover:bg-white hover:text-black p-5">
+      <nav
+        // className={`fixed top-0 left-0 w-full text-white bg-transparent hover:text-black p-5`}
+        className={`fixed top-0 left-0 w-full p-5 transition-colors duration-300 ${
+          isHovered ? "bg-white text-black" : "bg-transparent text-white"
+        }`}
+      >
         <div className="flex justify-between items-center w-[90%] mx-auto">
           <div>
             {/* Company logo */}
@@ -8,7 +17,11 @@ const Navbar = () => {
           </div>
           <div>
             <ul className="hidden md:flex gap-7 ">
-              <li className="text-lg font-semibold py-1 hover:border-b-[3px] border-black group">
+              <li
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                className="text-lg font-semibold py-1 hover:border-b-[3px] border-black group"
+              >
                 <a href="">
                   {/* navbar option name */}
                   <p>Service</p>
@@ -52,7 +65,11 @@ const Navbar = () => {
                   </div>
                 </a>
               </li>
-              <li className="text-lg font-semibold py-1 hover:border-b-[3px] border-black group">
+              <li
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                className="text-lg font-semibold py-1 hover:border-b-[3px] border-black group"
+              >
                 <a href="">
                   {/* navbar option name */}
                   <p>Industries</p>
