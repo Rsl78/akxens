@@ -30,7 +30,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
       // className={`fixed top-0 left-0 w-full text-white bg-transparent hover:text-black p-5`}
-      className={`fixed top-0 left-0 w-full bg-black/10 backdrop-blur-sm  px-5 py-2.5 duration-300 z-50 ${
+      className={`fixed top-0 left-0 w-full bg-black/20 backdrop-blur-sm  px-5 py-2.5 duration-300 z-50 ${
         isHovered || isScrolled
           ? "bg-white text-black"
           : "bg-transparent text-white transition-colors duration-300"
@@ -46,11 +46,30 @@ const Navbar = () => {
           />
         </div>
         <div>
-          <ul className="hidden lg:flex gap-7 ">
+          <ul className="hidden lg:flex gap-10 ">
+            {/* About us */}
+            <li className="text-sm font-semibold py-1 ">
+              <a href="">
+                {/* navbar option name */}
+                <p>About Us</p>
+                {/* mega bar options */}
+              </a>
+            </li>
+
+            {/* Cases */}
+            <li className="text-sm font-semibold py-1 ">
+              <a href="">
+                {/* navbar option name */}
+                <p>Cases</p>
+                {/* mega bar options */}
+              </a>
+            </li>
+
+            {/* Services */}
             <li
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="text-lg font-semibold py-1 hover:border-b-[3px] border-black group"
+              className="text-sm font-semibold py-1 group"
             >
               <a href="">
                 {/* navbar option name */}
@@ -95,14 +114,16 @@ const Navbar = () => {
                 </div>
               </a>
             </li>
+
+            {/* Solutions */}
             <li
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="text-lg font-semibold py-1 hover:border-b-[3px] border-black group"
+              className="text-sm font-semibold py-1  group"
             >
               <a href="">
                 {/* navbar option name */}
-                <p>Industries</p>
+                <p>Solutions</p>
                 {/* mega bar options */}
                 <div className="absolute top-full left-0 w-full min-h-screen bg-black/80 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300">
                   <div className="grid grid-cols-5 gap-5 px-40 py-10 bg-white">
@@ -142,36 +163,50 @@ const Navbar = () => {
                 </div>
               </a>
             </li>
-            <li className="text-lg font-semibold py-1 hover:border-b-[3px] border-black">
+
+            {/* Clients */}
+            <li className="text-sm font-semibold py-1">
               <a href="">
                 {/* navbar option name */}
-                <p>Case Study</p>
-                {/* mega bar options */}
-              </a>
-            </li>
-            <li className="text-lg font-semibold py-1 hover:border-b-[3px] border-black">
-              <a href="">
-                {/* navbar option name */}
-                <p>Insighs</p>
-                {/* mega bar options */}
-              </a>
-            </li>
-            <li className="text-lg font-semibold py-1 hover:border-b-[3px] border-black">
-              <a href="">
-                {/* navbar option name */}
-                <p>Company</p>
+                <p>Clients</p>
                 {/* mega bar options */}
               </a>
             </li>
 
-            <li>
+            {/* blog */}
+            <li className="text-sm font-semibold py-1 ">
               <a href="">
-                <button className=" p-2 rounded-sm font-extrabold bg-[#F8B000] text-black  hover:border  hover:bg-[#FFFFFF]  rounded-pill">
+                {/* navbar option name */}
+                <p>Blog</p>
+                {/* mega bar options */}
+              </a>
+            </li>
+
+            {/* contact */}
+            <li className="text-sm font-semibold py-1 ">
+              <a href="">
+                {/* navbar option name */}
+                <p>Contacts</p>
+                {/* mega bar options */}
+              </a>
+            </li>
+
+            {/* <li>
+              <a href="">
+                <button className=" p-2 px-5 rounded-sm font-extrabold bg-[#F8B000] text-black  hover:border  hover:bg-[#FFFFFF]  rounded-pill">
                   Let&apos;s Chat
                 </button>
               </a>
-            </li>
+            </li> */}
           </ul>
+        </div>
+
+        <div>
+          <a href="">
+            <button className=" p-2 px-5 rounded-sm font-extrabold bg-[#F8B000] text-black  hover:border  hover:bg-[#FFFFFF]  rounded-pill">
+              Let&apos;s Chat
+            </button>
+          </a>
         </div>
       </div>
     </motion.nav>

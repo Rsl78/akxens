@@ -7,6 +7,8 @@ import MarsLogo from "../../assets/logo/mars.svg";
 import HiltonLogo from "../../assets/logo/hilton.svg";
 import ChemtreatLogo from "../../assets/logo/chemtreat.svg";
 
+import bgVideo from "../../assets/video/bg.mp4";
+
 import Card from "./Card";
 
 const Hero = () => {
@@ -28,16 +30,23 @@ const Hero = () => {
       <>
         <div
           className="hero relative min-h-screen hero-section mb-5"
-          style={{
-            backgroundImage:
-              "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-          }}
+          // style={{
+          //   backgroundImage:
+          //     "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+          // }}
         >
+          <video
+            src={bgVideo}
+            autoPlay
+            muted
+            loop
+            className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+          />
           <div className="hero-overlay"></div>
           <div className="hero-content flex items-start  justify-start ">
             <div>
               <div className="pb-2">
-                <p className="text-white flex pl-2 py-0.5 gap-1 max-w-[35%] border rounded-full">
+                <p className="text-white flex pl-3 py-0.5 gap-1 max-w-[400px] border rounded-full">
                   <span>
                     <img className="h-6" src={BridgeIcon} alt="" />
                   </span>{" "}
@@ -65,7 +74,7 @@ const Hero = () => {
 
               {/* logo */}
 
-              <div className="hero-overlay bg-white/10 backdrop-blur-md h-18 absolute bottom-0 left-0 right-0 flex items-center">
+              <div className="hero-overlay bg-black/20 backdrop-blur-md h-18 absolute bottom-0 left-0 right-0 flex items-center">
                 <div className="flex justify-between items-center max-w-[1350px] mx-auto w-full">
                   <h1 className="text-white text-sm font-semibold leading-tight max-w-30">
                     TRUSTED BY LEADING BRANDS AND STARTUPS
@@ -77,7 +86,7 @@ const Hero = () => {
                     <img src={StarbucksLogo} alt="" />
                     <img src={MarsLogo} alt="" />
                     <img src={HiltonLogo} alt="" />
-                    <img src={ChemtreatLogo} alt="" /> 
+                    <img src={ChemtreatLogo} alt="" />
                   </div>
                 </div>
               </div>
