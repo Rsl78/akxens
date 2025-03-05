@@ -1,4 +1,12 @@
 import BridgeIcon from "../../assets/icon/bridge.svg";
+import AmericanExpressLogo from "../../assets/logo/american-express.svg";
+import MultiverseLogo from "../../assets/logo/multiverse.svg";
+import WholeFoodMarketLogo from "../../assets/logo/whole-foods-market.svg";
+import StarbucksLogo from "../../assets/logo/starbucks.svg";
+import MarsLogo from "../../assets/logo/mars.svg";
+import HiltonLogo from "../../assets/logo/hilton.svg";
+import ChemtreatLogo from "../../assets/logo/chemtreat.svg";
+
 import Card from "./Card";
 
 const Hero = () => {
@@ -26,7 +34,7 @@ const Hero = () => {
           }}
         >
           <div className="hero-overlay"></div>
-          <div className="hero-content flex items-start justify-start ">
+          <div className="hero-content flex items-start  justify-start ">
             <div>
               <div className="pb-2">
                 <p className="text-white flex pl-2 py-0.5 gap-1 max-w-[35%] border rounded-full">
@@ -62,6 +70,15 @@ const Hero = () => {
                   <h1 className="text-white text-sm font-semibold leading-tight max-w-30">
                     TRUSTED BY LEADING BRANDS AND STARTUPS
                   </h1>
+                  <div className="flex gap-1">
+                    <img src={AmericanExpressLogo} alt="" />
+                    <img src={MultiverseLogo} alt="" />
+                    <img src={WholeFoodMarketLogo} alt="" />
+                    <img src={StarbucksLogo} alt="" />
+                    <img src={MarsLogo} alt="" />
+                    <img src={HiltonLogo} alt="" />
+                    <img src={ChemtreatLogo} alt="" /> 
+                  </div>
                 </div>
               </div>
             </div>
