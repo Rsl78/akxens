@@ -30,13 +30,13 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
       // className={`fixed top-0 left-0 w-full text-white bg-transparent hover:text-black p-5`}
-      className={`fixed top-0 left-0 w-full p-5 duration-300 z-50 ${
+      className={`fixed top-0 left-0 w-full bg-black/10 backdrop-blur-sm  px-5 py-2.5 duration-300 z-50 ${
         isHovered || isScrolled
           ? "bg-white text-black"
           : "bg-transparent text-white transition-colors duration-300"
       }`}
     >
-      <div className="flex justify-between items-center w-[90%] mx-auto">
+      <div className="flex justify-between items-center max-w-[1350px] mx-auto">
         <div>
           {/* Company logo */}
           <img
@@ -166,8 +166,8 @@ const Navbar = () => {
 
             <li>
               <a href="">
-                <button className=" px-5  mt-1 rounded-2xl  border-3  hover:text-white font-semibold  hover:bg-[#1877F2] hover:border-[#1877F2]  rounded-pill">
-                  Contact Us
+                <button className=" p-2 rounded-sm font-extrabold bg-[#F8B000] text-black  hover:border  hover:bg-[#FFFFFF]  rounded-pill">
+                  Let&apos;s Chat
                 </button>
               </a>
             </li>

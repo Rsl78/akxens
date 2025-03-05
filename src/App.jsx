@@ -1,7 +1,7 @@
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Hero from "./components/heroSection/Hero";
 import Navbar from "./components/Navbar";
 import ServiceSection from "./components/ServiceSection";
 // import TransformationSolutionSection from "./components/TransformationSolutionSection";
@@ -12,14 +12,13 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className="container  mx-auto px-3 md:px-0">
-        <AboutUs/>
+        <AboutUs />
         {/* <TransformationSolutionSection/> */}
-        <ServiceSection/>
-
+        <ServiceSection />
       </div>
       <ContactUs />
-        <Footer />
-  
+      <Footer />
+
       <div className="container mx-auto"></div>
     </>
   );
