@@ -27,7 +27,7 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="hero relative min-h-screen hero-section mb-5">
+    <div className="hero relative min-h-screen hero-section ">
       <video
         src={bgVideo}
         autoPlay
