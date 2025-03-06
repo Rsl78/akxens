@@ -1,4 +1,6 @@
 import ArrowIcon from "../../assets/icon/arrow.svg";
+import PropTypes from "prop-types";
+
 const Button = ({ title }) => {
   return (
     
@@ -10,6 +12,10 @@ const Button = ({ title }) => {
       </span>
     </button>
   );
+};
+
+Button.propTypes = {
+  title: PropTypes.string,
 };
 
 export default Button;
