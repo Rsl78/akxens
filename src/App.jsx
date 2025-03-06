@@ -2,6 +2,7 @@
 // import ContactUs from "./components/ContactUs";
 // import Footer from "./components/Footer";
 import BestResultSection from "./components/BestResult/BestResultSection";
+import ContactMeSection from "./components/ContactUs/ContactMeSection";
 import Expertise from "./components/Expertise/Expertise";
 import Footer from "./components/footer/Footer";
 import Hero from "./components/heroSection/Hero";
@@ -23,6 +24,7 @@ const App = () => {
           <Expertise/>
           <BestResultSection />
           <HowWeBuild/>
+          <ContactMeSection/>
         </div>
           <Footer/>
       </div>
