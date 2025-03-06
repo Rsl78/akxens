@@ -11,7 +11,7 @@ const BestResultSection = () => {
         title: "Clear communication",
         description:
           "We build relationships based on integrity and trust, deliver on our promises, and always maintain clear communication.",
-        bgColor: "bg-purple-500",
+        bgColor: "bg-[#7C42DA]",
         rotateClass: "lg:rotate-[4deg] rotate-0", // store the entire class here
         icon: IcHelp1,
       },
@@ -20,7 +20,7 @@ const BestResultSection = () => {
         title: "Customer-Centric Approach",
         description:
           "We prioritize our client’s success, understand your unique needs, and deliver tailored solutions that drive your business growth.",
-        bgColor: "bg-blue-600",
+        bgColor: "bg-[#4252DA]",
         rotateClass: "lg:rotate-[-2deg] rotate-0",
         icon: IcHelp2,
       },
@@ -29,7 +29,7 @@ const BestResultSection = () => {
         title: "Innovation and Excellence",
         description:
           "We consistently deliver innovative, high-quality solutions as a team on the cutting edge of technology trends.",
-        bgColor: "bg-sky-500",
+        bgColor: "bg-[#429ADA]",
         rotateClass: "lg:rotate-[3deg] rotate-0",
         icon: IcHelp3,
       },

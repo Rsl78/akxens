@@ -1,29 +1,54 @@
-// Footer.jsx
-
-// Import your logo & icons if needed
-// import diffcoLogo from "../assets/logo/diffco.svg";
-// import linkedinIcon from "../assets/icons/linkedin.svg";
-// ... etc.
+import  { useState } from "react";
 
 const Footer = () => {
+  // Track which section is currently expanded in mobile view
+  const [activeSection, setActiveSection] = useState("");
+
+  // Toggles the active section. If the same section is clicked again, close it.
+  const handleToggle = (sectionName) => {
+    setActiveSection((prev) => (prev === sectionName ? "" : sectionName));
+  };
+
   return (
     <>
       <hr className="border-0 h-[1px] bg-gray-200" />
       <footer
         className="
-        w-full 
-        bg-gradient-to-r from-[#FCF6F2] via-[#FDFAFE] to-[#F9F2FC] 
-        text-gray-800
-        
-      "
+          w-full 
+          bg-gradient-to-r from-[#FCF6F2] via-[#FDFAFE] to-[#F9F2FC] 
+          text-gray-800
+        "
       >
         {/* Upper section: four columns */}
         <div className="max-w-7xl mx-auto px-6 py-15">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-25">
-            {/* Column 1 */}
+          {/* 
+            Here we treat each column as an accordion panel on mobile:
+            - Heading is clickable on < sm
+            - On sm+ screens, they're always open
+          */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-25">
+            {/* COLUMN 1: Our services */}
             <div>
-              <h3 className="font-semibold text-xl mb-4">Our services</h3>
-              <ul className="space-y-5">
+              {/* Heading for smaller screens (turns into a button) */}
+              <button
+                className="flex justify-between items-center w-full sm:block text-left sm:text-base font-semibold text-xl mb-4"
+                onClick={() => handleToggle("services")}
+              >
+                Our services
+                {/* Optional caret/arrow icon for mobile */}
+                <span className="sm:hidden">
+                  {activeSection === "services" ? "▲" : "▼"}
+                </span>
+              </button>
+
+              {/* Content - hidden on mobile if not active; always shown on sm+ */}
+              <ul
+                className={`
+                  space-y-5
+                  ${activeSection === "services" ? "block" : "hidden"}
+                  sm:block
+                `}
+              >
                 <li>Team augmentation</li>
                 <li>Mobile Development</li>
                 <li>Back-end Development</li>
@@ -33,10 +58,24 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 2 */}
+            {/* COLUMN 2: Solutions */}
             <div>
-              <h3 className="font-semibold text-xl mb-4">Solutions</h3>
-              <ul className="space-y-5">
+              <button
+                className="flex justify-between items-center w-full sm:block text-left sm:text-base font-semibold text-xl mb-4"
+                onClick={() => handleToggle("solutions")}
+              >
+                Solutions
+                <span className="sm:hidden">
+                  {activeSection === "solutions" ? "▲" : "▼"}
+                </span>
+              </button>
+              <ul
+                className={`
+                  space-y-5
+                  ${activeSection === "solutions" ? "block" : "hidden"}
+                  sm:block
+                `}
+              >
                 <li>AI-driven software</li>
                 <li>Enterprise development</li>
                 <li>Custom Development</li>
@@ -44,10 +83,24 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 3 */}
-            <div className="">
-              <h3 className="font-semibold  text-xl mb-4">Cases</h3>
-              <ul className="space-y-5">
+            {/* COLUMN 3: Cases */}
+            <div>
+              <button
+                className="flex justify-between items-center w-full sm:block text-left sm:text-base font-semibold text-xl mb-4"
+                onClick={() => handleToggle("cases")}
+              >
+                Cases
+                <span className="sm:hidden">
+                  {activeSection === "cases" ? "▲" : "▼"}
+                </span>
+              </button>
+              <ul
+                className={`
+                  space-y-5
+                  ${activeSection === "cases" ? "block" : "hidden"}
+                  sm:block
+                `}
+              >
                 <li>Social media iOS app</li>
                 <li>Android app for fast delivery services</li>
                 <li>Enterprise SaaS website</li>
@@ -57,10 +110,24 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 4 */}
-            <div className="">
-              <h3 className="font-semibold text-xl mb-4">Company</h3>
-              <ul className="space-y-5">
+            {/* COLUMN 4: Company */}
+            <div>
+              <button
+                className="flex justify-between items-center w-full sm:block text-left sm:text-base font-semibold text-xl mb-4"
+                onClick={() => handleToggle("company")}
+              >
+                Company
+                <span className="sm:hidden">
+                  {activeSection === "company" ? "▲" : "▼"}
+                </span>
+              </button>
+              <ul
+                className={`
+                  space-y-5
+                  ${activeSection === "company" ? "block" : "hidden"}
+                  sm:block
+                `}
+              >
                 <li>Who we are</li>
                 <li>Clients</li>
                 <li>Jobs</li>
@@ -84,7 +151,7 @@ const Footer = () => {
               </span>
             </div>
 
-            {/* Middle: social icons (adjust as needed) */}
+            {/* Middle: social icons */}
             <div className="mt-4 md:mt-0 flex items-center space-x-4">
               {/* <a href="#"><img src={linkedinIcon} alt="LinkedIn" className="h-5" /></a> */}
               {/* <a href="#"><img src={twitterIcon} alt="Twitter" className="h-5" /></a> */}
