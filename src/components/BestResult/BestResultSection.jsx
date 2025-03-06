@@ -12,7 +12,7 @@ const BestResultSection = () => {
         description:
           "We build relationships based on integrity and trust, deliver on our promises, and always maintain clear communication.",
         bgColor: "bg-purple-500",
-        rotateClass: "rotate-[4deg]", // store the entire class here
+        rotateClass: "lg:rotate-[4deg] rotate-0", // store the entire class here
         icon: IcHelp1,
       },
       {
@@ -21,7 +21,7 @@ const BestResultSection = () => {
         description:
           "We prioritize our client’s success, understand your unique needs, and deliver tailored solutions that drive your business growth.",
         bgColor: "bg-blue-600",
-        rotateClass: "rotate-[-2deg]",
+        rotateClass: "lg:rotate-[-2deg] rotate-0",
         icon: IcHelp2,
       },
       {
@@ -30,14 +30,14 @@ const BestResultSection = () => {
         description:
           "We consistently deliver innovative, high-quality solutions as a team on the cutting edge of technology trends.",
         bgColor: "bg-sky-500",
-        rotateClass: "rotate-[3deg]",
+        rotateClass: "lg:rotate-[3deg] rotate-0",
         icon: IcHelp3,
       },
     ];
     return (
       <div>
         <h1 className="text-4xl pb-10 font-bold text-center">How Diffco helps you <br /> deliver the best results</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0.5 ">
+        <div className="px-2 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-0.5 ">
           {cards.map((card) => (
             <ResultCard key={card.id} card={card} />
           ))}

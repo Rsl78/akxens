@@ -8,10 +8,10 @@ const ResultCard = ({ card }) => {
   const secondHalf = words.slice(half).join(" ");
   return (
     <div
-      className={`text-white shadow-md p-10 h-70 rounded-xl ${rotateClass} hover:rotate-0 transition-transform duration-300 ${bgColor}`}
+      className={`text-white shadow-md p-10  rounded-xl ${rotateClass} hover:rotate-0 transition-transform duration-300 ${bgColor}`}
     >
       <img className="pb-4" src={icon} alt="" />
-      <h2 className="text-2xl font-bold pb-4">{firstHalf} <br /> {secondHalf}</h2>
+      <h2 className="text-2xl font-bold pb-2">{firstHalf} <br /> {secondHalf}</h2>
       <p className="mt-2">{description}</p>
     </div>
   );
