@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import LogoBlack from "../assets/logoBlack.svg";
-import LogoWhite from "../assets/logoWhite.svg";
+import LogoBlack from "../../assets/logoBlack.svg";
+import LogoWhite from "../../assets/logoWhite.svg";
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const heroSectionHeight =
         document.querySelector(".hero-section").offsetHeight;
-      if (window.scrollY > heroSectionHeight) {
+      if (window.scrollY > heroSectionHeight* 0.8) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
