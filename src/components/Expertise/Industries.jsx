@@ -33,11 +33,15 @@ const Industries = () => {
   };
 
   return (
-    <>
-      <hr className="mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-200" />
-      <div className=" border-gray-300 h-96 grid grid-cols-6 mb-10">
+    <div className="bg-[url('/img2.jpg')]  bg-cover bg-center  backdrop-blur-3xl shadow pb-10 mb-20 rounded-4xl text-white">
+      
+      <h2 className="text-center  text-4xl font-bold py-10">
+        Digital transformation for industries
+      </h2>
+      <hr className="mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-300" />
+      <div className=" border-gray-300 h-96 grid grid-cols-7 mb-10">
         {/* Left column: text + button */}
-        <div className="col-span-2 ml-[calc((100vw-1350px)/2)] border-r border-gray-300 p-4">
+        <div className="col-span-2 ml-[calc((100vw-1350px)/2)] border-r border-gray-300  p-4">
           <p className="py-10 pr-3 text-lg">
             Wezom is your one-stop software development company, offering a full
             range of services for all industries. We drive your business
@@ -47,7 +51,7 @@ const Industries = () => {
         </div>
 
         {/* Right column: horizontally scrollable row of cards */}
-        <div className="col-span-4 pt-10 ">
+        <div className="col-span-5 pt-10 ">
           <div
             ref={scrollRef}
             onMouseDown={handleMouseDown}
@@ -68,7 +72,7 @@ const Industries = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

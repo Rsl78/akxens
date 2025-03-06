@@ -18,14 +18,15 @@ const App = () => {
         <div className="max-w-[1350px] mx-auto ">
           <ServiceWeProvideSection />
           <Expertise />
+        </div>
+        <Industries />
+        <div className="max-w-[1350px] mx-auto">
           <BestResultSection />
-          <HowWeBuild/>
-          <Blog/>
+          <HowWeBuild />
+          <Blog />
           <HowWeBuild />
           <ContactMeSection />
         </div>
-        <div className="max-w-[1350px] mx-auto"></div>
-        <Industries />
         <Footer />
       </div>
       <div className="container mx-auto"></div>

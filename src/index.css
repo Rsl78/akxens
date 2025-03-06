@@ -62,3 +62,15 @@ div select {
   scrollbar-width: none;
   /* Firefox */
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #FAA818 !important;
+  /* Change this to your desired color */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #E0403B !important;
+  /* Change this to your desired hover color */
+}
