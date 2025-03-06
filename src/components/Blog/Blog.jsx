@@ -110,10 +110,7 @@ const Blog = () => {
                     ))}
             </Swiper>
 
-                 <div className="flex justify-center mt-4 space-x-4">
-                <button className="swiper-button-prev px-6 py-2 bg-gray-800 text-white rounded-md">Prev</button>
-                <button className="swiper-button-next px-6 py-2 bg-gray-800 text-white rounded-md">Next</button>
-            </div>
+                 
         </div>
     );
 };
