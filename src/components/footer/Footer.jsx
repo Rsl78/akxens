@@ -1,4 +1,12 @@
 import  { useState } from "react";
+import AkxensLogo from "../../assets/logoBlack.svg";
+import LinkedInIcon from "../../assets/icon/linkedin.svg";
+import FacebookIcon from "../../assets/icon/facebook.svg";
+import InstagramIcon from "../../assets/icon/instagram.svg";
+
+import LinkedInDarkIcon from "../../assets/icon/linkedinDark.svg";
+import FacebookDarkIcon from "../../assets/icon/facebookDark.svg";
+import InstagramDarkIcon from "../../assets/icon/instagramDark.svg";
 
 const Footer = () => {
   // Track which section is currently expanded in mobile view
@@ -143,8 +151,7 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
             {/* Left side: logo + phone + address */}
             <div className="flex flex-col md:flex-row items-center md:space-x-4 text-sm text-gray-500">
-              {/* <img src={diffcoLogo} alt="Diffco Logo" className="h-6 mr-2" /> */}
-              <span className="font-semibold">Diffco</span>
+              <img src={AkxensLogo} alt="Akxens Logo" className="h-6 mr-2" />
               <span>| +1 (415) 655-1002</span>
               <span>
                 | 333 W San Carlos St Suite 600, San Jose, CA, USA, 95110
@@ -153,14 +160,42 @@ const Footer = () => {
 
             {/* Middle: social icons */}
             <div className="mt-4 md:mt-0 flex items-center space-x-4">
-              {/* <a href="#"><img src={linkedinIcon} alt="LinkedIn" className="h-5" /></a> */}
-              {/* <a href="#"><img src={twitterIcon} alt="Twitter" className="h-5" /></a> */}
-              {/* <a href="#"><img src={behanceIcon} alt="Behance" className="h-5" /></a> */}
-              {/* <img src={pciDssIcon} alt="PCI DSS" className="h-5" /> */}
-              <span>in</span>
-              <span>Twitter</span>
-              <span>Behance</span>
-              <span>PCI DSS</span>
+              <a href="#" className="relative group w-5 h-5">
+                <img
+                  src={LinkedInIcon}
+                  alt="LinkedIn"
+                  className="absolute top-0 left-0 w-full h-full group-hover:hidden"
+                />
+                <img
+                  src={LinkedInDarkIcon}
+                  alt="LinkedIn (hover)"
+                  className="hidden group-hover:block w-full h-full"
+                />
+              </a>
+              <a href="#" className="relative group w-5 h-5">
+                <img
+                  src={FacebookIcon}
+                  alt="Facebook"
+                  className="absolute top-0 left-0 w-full h-full group-hover:hidden"
+                />
+                <img
+                  src={FacebookDarkIcon}
+                  alt="Facebook (hover)"
+                  className="hidden group-hover:block w-full h-full"
+                />
+              </a>
+              <a href="#" className="relative group w-5 h-5">
+                <img
+                  src={InstagramIcon}
+                  alt="Instagram"
+                  className="absolute top-0 left-0 w-full h-full group-hover:hidden"
+                />
+                <img
+                  src={InstagramDarkIcon}
+                  alt="Instagram (hover)"
+                  className="hidden group-hover:block w-full h-full"
+                />
+              </a>
             </div>
 
             {/* Right side: policy + copyright */}
@@ -168,7 +203,7 @@ const Footer = () => {
               <a href="#" className="hover:underline">
                 Privacy Policy
               </a>
-              <span>© 2025, Diffco US Inc.</span>
+              <span>© 2025, Akxens Inc.</span>
             </div>
           </div>
         </div>
