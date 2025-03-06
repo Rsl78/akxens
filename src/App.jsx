@@ -1,6 +1,7 @@
 // import AboutUs from "./components/AboutUs";
 // import ContactUs from "./components/ContactUs";
 // import Footer from "./components/Footer";
+import BestResultSection from "./components/BestResult/BestResultSection";
 import Hero from "./components/heroSection/Hero";
 import Navbar from "./components/Navbar";
 import ServiceWeProvideSection from "./components/serviceWeProvide/ServiceWeProvideSection";
@@ -16,14 +17,11 @@ const App = () => {
       <div className="bg-[#F5F5FB]">
         <div className="max-w-[1350px] mx-auto ">
           <ServiceWeProvideSection />
+          <BestResultSection />
         </div>
       </div>
-      {/* <div className="container  mx-auto px-3 md:px-0">
-        <AboutUs />
-        <ServiceSection />
-      </div>
-      <ContactUs />
-      <Footer /> */}
+      
+  
 
       <div className="container mx-auto"></div>
     </>
