@@ -2,6 +2,7 @@
 // import ContactUs from "./components/ContactUs";
 // import Footer from "./components/Footer";
 import BestResultSection from "./components/BestResult/BestResultSection";
+import Expertise from "./components/Expertise/Expertise";
 import Footer from "./components/footer/Footer";
 import Hero from "./components/heroSection/Hero";
 import HowWeBuild from "./components/HowWeBuild/HowWeBuild";
@@ -19,6 +20,7 @@ const App = () => {
       <div className="bg-[#F5F5FB]">
         <div className="max-w-[1350px] mx-auto ">
           <ServiceWeProvideSection />
+          <Expertise/>
           <BestResultSection />
           <HowWeBuild/>
         </div>
