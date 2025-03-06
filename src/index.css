@@ -37,11 +37,6 @@
   padding: 0 5px;
 }
 
-
-
-
-
-
 div select {
   content: '▼';
   position: absolute;
@@ -50,4 +45,20 @@ div select {
   transform: translateY(-50%);
   pointer-events: none;
   color: gray;
+}
+
+
+
+/* Scrrol Hidden */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
