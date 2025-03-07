@@ -9,16 +9,17 @@ import Hero from "./components/heroSection/Hero";
 import HowWeBuild from "./components/HowWeBuild/HowWeBuild";
 import Navbar from "./components/Navbar/Navbar";
 import ServiceWeProvideSection from "./components/serviceWeProvide/ServiceWeProvideSection";
+import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Hero />
-          <CustomDevelopmentSection />
+      <CustomDevelopmentSection />
       <div className="bg-[#F5F5FB]">
         <div className="max-w-[1350px] mx-auto ">
-      <Expertise />
+          <Expertise />
           <ServiceWeProvideSection />
         </div>
         <Industries />
@@ -28,6 +29,7 @@ const App = () => {
           <Blog />
           <ContactMeSection />
         </div>
+        <TestimonialSection/>
         <Footer />
       </div>
       <div className="container mx-auto"></div>

@@ -47,6 +47,13 @@ div select {
   color: gray;
 }
 
+/* blockquote::before {
+  content: "\201C";
+  font-size: 4rem;
+  margin-right: 4px;
+  color: #000;
+} */
+
 
 
 /* Scrrol Hidden */
