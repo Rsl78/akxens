@@ -1,15 +1,16 @@
 import MobileAppIcon from "../../assets/icon/mobileApp.svg";
+import MobileAppIconWhite from "../../assets/icon/mobileAppWhite.svg";
 import MobileAppColorIcon from "../../assets/icon/mobileAppColor.svg";
 
 const CustomDevelopmentCard = () => {
   return (
-    <div className="group w-95 p-5 border-t-3 border-l-2 border-r-2 border-transparent hover:border-t-3 hover:border-l-2 hover:border-r-2 hover:rounded-tl-xl hover:rounded-tr-[100px] hover:rounded-bl-lg hover:rounded-br-lg hover:border-[#F9A41B]">
+    <div className="group w-90 p-5 border-t-3 border-l-2 border-r-2 border-transparent hover:border-t-3 hover:border-l-2 hover:border-r-2 hover:rounded-tl-xl hover:rounded-tr-[100px] hover:rounded-bl-lg hover:rounded-br-lg hover:border-[#F9A41B] text-white">
       {/* Title row */}
       <div className="flex items-center space-x-4 mb-1">
         {/* Default icon (visible when not hovered) */}
         <img
           className="h-10 w-10 group-hover:hidden"
-          src={MobileAppIcon}
+          src={MobileAppIconWhite}
           alt=""
         />
         {/* Icon shown on hover */}

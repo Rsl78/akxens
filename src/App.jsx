@@ -15,11 +15,11 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
+          <CustomDevelopmentSection />
       <div className="bg-[#F5F5FB]">
         <div className="max-w-[1350px] mx-auto ">
+      <Expertise />
           <ServiceWeProvideSection />
-          <CustomDevelopmentSection/>
-          <Expertise />
         </div>
         <Industries />
         <div className="max-w-[1350px] mx-auto">
