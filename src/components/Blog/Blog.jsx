@@ -171,7 +171,7 @@ const Blog = () => {
       </h1>
 
       {/* Category Tabs */}
-      <div className="flex space-x-12 pb-3 lg:justify-center overflow-x-auto">
+      <div className="flex space-x-12 pb-3 lg:justify-center overflow-x-auto no-scrollbar">
         {blogs.map((category) => (
           <button
             key={category.name}
