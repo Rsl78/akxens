@@ -24,7 +24,6 @@ const App = () => {
           <BestResultSection />
           <HowWeBuild />
           <Blog />
-          <HowWeBuild />
           <ContactMeSection />
         </div>
         <Footer />
