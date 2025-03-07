@@ -58,8 +58,10 @@ const TestimonialSection = () => {
     <>
       {/* Horizontal line full-width, but aligned to your 1350px container */}
 
-      <div className="bg-[#040D12] backdrop-blur-3xl shadow py-5 md:py-15 mb-20 text-white rounded-4xl">
-        <h1 className="font-bold text-center text-4xl">What Our Clients Say About Us</h1>
+      <div className="bg-[#0D161A] backdrop-blur-3xl shadow py-5 md:py-15 mb-20 text-white rounded-4xl">
+        <h1 className="font-bold text-center text-4xl">
+          What Our Clients Say About Us
+        </h1>
         <div className="border-gray-300  h-96 grid grid-cols-6 mb-10 ml-[calc((100vw-1350px)/2)]  ">
           <div className="col-span-6 pt-10">
             <div

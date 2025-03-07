@@ -35,7 +35,7 @@ const Industries = () => {
   };
 
   return (
-    <div className="bg-[#040D12] backdrop-blur-3xl shadow pb-5 md:pb-10 mb-20 text-white rounded-4xl">
+    <div className="bg-[#0D161A] backdrop-blur-3xl shadow pb-5 md:pb-10 mb-20 text-white rounded-4xl">
       <h2 className="text-center text-4xl font-bold py-10">
         Our Expertise for Your <br /> <span className="">Success</span>
       </h2>
