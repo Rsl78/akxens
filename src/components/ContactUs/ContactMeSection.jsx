@@ -23,12 +23,12 @@ const ContactMeSection = () => {
   return (
     <>
       <section
-        className=" grid grid-cols-1 md:grid-cols-11 py-10 mx-auto container"
+        className=" grid grid-cols-1 md:grid-cols-11 py-10 mx-2 sm:mx-auto container gap-1"
         id="contact"
       >
         {/* Other content */}
-        <aside className="md:col-span-5  gap-4 pb-5 bg-gray-200 space-y-4 w-full p-6 rounded">
-          <div className="p-6">
+        <aside className="md:col-span-5  gap-4 pb-5 bg-gray-200 space-y-4 w-full p-6 rounded-xl">
+          <div className="p-6 space-y-1">
 
             <div className="pb-2">
               <h2 className=" font-primary font-bold text-3xl">
@@ -94,7 +94,7 @@ const ContactMeSection = () => {
         </aside>
 
         {/* Contact form */}
-        <div className="pt-3 md:col-span-6 justify-items-start bg-blue-950 p-6 rounded">
+        <div className="pt-3 md:col-span-6 justify-items-start bg-blue-950 p-6 rounded-xl ">
           <h2 className="font-primary font-bold text-4xl text-white p-6">
             Let’s build something <br />
             great together.
