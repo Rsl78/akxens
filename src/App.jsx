@@ -10,6 +10,7 @@ import HowWeBuild from "./components/HowWeBuild/HowWeBuild";
 import Navbar from "./components/Navbar/Navbar";
 import ServiceWeProvideSection from "./components/serviceWeProvide/ServiceWeProvideSection";
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
+import CardScrollAnimation from "./components/About/CardScrollAnimation";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <ContactMeSection />
         </div>
         <TestimonialSection/>
+        <CardScrollAnimation/>
         <Footer />
       </div>
       <div className="container mx-auto"></div>
