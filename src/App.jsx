@@ -33,7 +33,9 @@ const App = () => {
           <ContactMeSection />
         </div>
         <TestimonialSection/>
+        <div className="max-w-[1350px] mx-auto">
         <CardScrollAnimation/>
+        </div>
         <Footer />
       </div>
       <div className="container mx-auto"></div>
