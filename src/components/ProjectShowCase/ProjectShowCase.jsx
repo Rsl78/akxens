@@ -11,45 +11,44 @@ const ProjectShowcase = () => {
   const projects = [
     {
       id: 1,
+      businessType: ["Ecommerce"],
       title: "Project Alpha",
       description:
-        "A groundbreaking project that explores advanced algorithms in artificial intelligence and machine learning.",
-      bgColor: "bg-red-800",
+        "WEZOM's team developed a custom B2B web portal for a manufacturer of medical rehabilitation equipment. Our primary goal was to streamline order processing and cut down the management team's workload. This new platform replaces the former order system, enabling customers to access the product catalog, view order history, review documentation, and track payment statuses faster.",
+      img: "https://wezom.com/storage/cases/small/2QWqUuz7107XAyGIpCHkYNh1CFWFaAd3rfggRRSQ.png.webp?v=1740504230",
+      service: "Custom Software",
     },
     {
       id: 2,
-      title: "Project Beta",
+      businessType: ["Ecommerce", "Menufacturing"],
+      title: "Project Alpha",
       description:
-        "A creative approach to UI/UX design with a focus on responsive and user-friendly web interfaces.",
-      bgColor: "bg-blue-800",
+        "WEZOM's team developed a custom B2B web portal for a manufacturer of medical rehabilitation equipment. Our primary goal was to streamline order processing and cut down the management team's workload. This new platform replaces the former order system, enabling customers to access the product catalog, view order history, review documentation, and track payment statuses faster.",
+      img: "https://wezom.com/storage/cases/small/E7Y4HeCkXh0Oi1TuOjy7dJ7XqSXcHYQ34Hyeus94.png.webp?v=1737118713",
+      service: "Custom Software",
     },
     {
       id: 3,
-      title: "Project Gamma",
+      businessType: ["Ecommerce", "Menufacturing"],
+      title: "Project Alpha",
       description:
-        "An innovative solution to automate workflows and improve productivity in enterprise systems.",
-      bgColor: "bg-green-800",
+        "WEZOM's team developed a custom B2B web portal for a manufacturer of medical rehabilitation equipment. Our primary goal was to streamline order processing and cut down the management team's workload. This new platform replaces the former order system, enabling customers to access the product catalog, view order history, review documentation, and track payment statuses faster.",
+      img: "https://wezom.com/storage/cases/small/TPPhqBhChVYPOq17I1HdFSHf8hNVBIPo1ufA2J17.png.webp?v=1691049593",
+      service: ["Web Development", "Custom Software"],
     },
     {
       id: 4,
-      title: "Project Delta",
+      businessType: ["Ecommerce", "Menufacturing"],
+      title: "Project Alpha",
       description:
-        "A next-level concept integrating IoT devices to streamline daily activities and processes.",
-      bgColor: "bg-purple-800",
-    },
-    {
-      id: 5,
-      title: "Project Epsilon",
-      description:
-        "A platform that harnesses cloud computing for seamless data storage and analytics.",
-      bgColor: "bg-indigo-800",
-    },
-    {
-      id: 6,
-      title: "Project Zeta",
-      description:
-        "An advanced microservices architecture that optimizes scalability and maintainability.",
-      bgColor: "bg-yellow-800",
+        "WEZOM's team developed a custom B2B web portal for a manufacturer of medical rehabilitation equipment. Our primary goal was to streamline order processing and cut down the management team's workload. This new platform replaces the former order system, enabling customers to access the product catalog, view order history, review documentation, and track payment statuses faster.",
+      img: "https://wezom.com/storage/cases/small/Ma528qUFRb76OWmFTUph1dPysfI3J06ne6JR22Tm.png.webp?v=1731940495",
+      service: [
+        "Mobile App",
+        "Web Development",
+        "UI/UX Design",
+        "Custom Software",
+      ],
     },
   ];
 
@@ -128,7 +127,7 @@ const ProjectShowcase = () => {
       style={{ height: `${projects.length * 100}vh` }}
     >
       {/* Sticky container with bg-black that fills the viewport */}
-      <div className="sticky top-0 h-screen bg-black">
+      <div className="sticky top-0 h-screen mx-auto bg-black">
         {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
