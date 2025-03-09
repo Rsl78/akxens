@@ -10,8 +10,8 @@ const ProjectCard = ({ project, style, zIndex }) => {
       className={`absolute w-[95%] bg-[#212121] max-w-[1350px]  transition-all duration-500 ease-out rounded-2xl text-white`}
     >
       <div className="rounded-lg shadow-lg">
-        <div className="flex ">
-          <div className=" w-[30%] px-6 pt-5">
+        <div className="flex md:flex-row flex-col">
+          <div className=" md:w-[30%] px-6 pt-5">
             <h1 className="text-sm font-medium pb-3">
               {Array.isArray(businessType)
                 ? businessType.join(", ")
@@ -20,8 +20,8 @@ const ProjectCard = ({ project, style, zIndex }) => {
             <h2 className="text-4xl font-bold mb-5">{title}</h2>
             <p className="leading-relaxed">{description}</p>
           </div>
-          <div className="p-3 relative w-[70%]">
-            <div className="absolute flex gap-2 top-6 right-6 ">
+          <div className="m-3 relative md:w-[70%]">
+            <div className="absolute flex flex-wrap gap-2 top-4 right-4  ">
               {Array.isArray(service) ? (
                 service.map((item, index) => (
                   <div
