@@ -29,27 +29,21 @@ const Footer = () => {
       >
         {/* Upper section: four columns */}
         <div className="max-w-7xl mx-auto px-6 py-15">
-          {/* 
-            Here we treat each column as an accordion panel on mobile:
-            - Heading is clickable on < sm
-            - On sm+ screens, they're always open
-          */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-25">
             {/* COLUMN 1: Our services */}
             <div>
-              {/* Heading for smaller screens (turns into a button) */}
               <button
                 className="flex justify-between items-center w-full sm:block text-left sm:text-base font-semibold text-xl mb-4"
                 onClick={() => handleToggle("services")}
               >
                 Our services
-                {/* Optional caret/arrow icon for mobile */}
+                
                 <span className="sm:hidden">
                   {activeSection === "services" ? "▲" : "▼"}
                 </span>
               </button>
 
-              {/* Content - hidden on mobile if not active; always shown on sm+ */}
+          
               <ul
                 className={`
                   space-y-5

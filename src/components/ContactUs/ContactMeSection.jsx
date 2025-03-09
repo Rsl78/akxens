@@ -52,7 +52,7 @@ const ContactMeSection = () => {
 
               <div>
                 <h3 className="font-bold text-lg  ">Email</h3>
-                <h4 className="text-base ">roknuzzaman.rasel78@gmail.com</h4>
+                <h4 className="text-base ">contact@akxens.com</h4>
               </div>
             </div>
 
