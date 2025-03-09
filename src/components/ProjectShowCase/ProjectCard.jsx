@@ -7,7 +7,7 @@ const ProjectCard = ({ project, style, zIndex }) => {
   return (
     <div
       style={{ zIndex, left: "50%", top: "50%", ...style }}
-      className={`absolute w-[95%] bg-[#212121] max-w-[1350px]  transition-all duration-500 ease-out rounded-2xl text-white`}
+      className={`absolute w-[95%] bg-[#212121] max-w-[1350px]  transition-trans duration-500 ease-out rounded-2xl text-white`}
     >
       <div className="rounded-lg shadow-lg">
         <div className="flex md:flex-row flex-col">

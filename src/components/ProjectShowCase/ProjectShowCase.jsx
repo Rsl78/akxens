@@ -149,7 +149,7 @@ const ProjectShowcase = () => {
       <hr className="mx-2 lg:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800 mt-10" />
       {/* Background images for each card */}
       {/* Sticky container with bg-black that fills the viewport */}
-      <div className="sticky top-0 h-screen mx-auto pb-10 rounded-b-4xl mb-20 ">
+      <div className="sticky top-0 h-screen mx-auto pb-10 rounded-b-4xl mb-10 ">
         {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
