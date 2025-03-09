@@ -10,7 +10,7 @@ const CustomDevelopmentSection = () => {
             for Your Business
           </span>
         </h1>
-        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 ">
+        <div className="grid justify-items-center  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">
           <CustomDevelopmentCard />
           <CustomDevelopmentCard />
           <CustomDevelopmentCard />

@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 import Hero from "./components/heroSection/Hero";
 import HowWeBuild from "./components/HowWeBuild/HowWeBuild";
 import Navbar from "./components/Navbar/Navbar";
+import ProjectShowcase from "./components/ProjectShowCase/ProjectShowCase";
 import ServiceWeProvideSection from "./components/serviceWeProvide/ServiceWeProvideSection";
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
 import CardScrollAnimation from "./components/About/CardScrollAnimation";
@@ -24,6 +25,7 @@ const App = () => {
           <ServiceWeProvideSection />
         </div>
         <Industries />
+        <ProjectShowcase/>
         <div className="max-w-[1350px] mx-auto">
           <BestResultSection />
           <HowWeBuild />
