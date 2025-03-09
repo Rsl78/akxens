@@ -7,7 +7,7 @@ import TestimonialCard from "./TestimonialCard";
 
 const TestimonialSection = () => {
   return (
-    <div className="bg-[#040D12] backdrop-blur-3xl py-10 md:py-20 mb-20 text-white rounded-4xl">
+    <div className="bg-[#0D161A] backdrop-blur-3xl py-10 md:py-20 mb-20 text-white rounded-4xl">
       <h1 className="font-bold text-center text-4xl">
         What Our{" "}
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FAA818] via-[#E0403B] to-[#CE22E0]">
@@ -19,7 +19,7 @@ const TestimonialSection = () => {
       <div className="max-w-[1350px] mx-auto pt-6">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-           spaceBetween={20}
+          spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 1 },
