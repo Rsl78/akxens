@@ -24,13 +24,13 @@ const App = () => {
           <ServiceWeProvideSection />
         </div>
         <Industries />
+        <ProjectShowcase/>
         <div className="max-w-[1350px] mx-auto">
           <BestResultSection />
           <HowWeBuild />
           <Blog />
           <ContactMeSection />
         </div>
-        <ProjectShowcase/>
         <TestimonialSection/>
         <Footer />
       </div>

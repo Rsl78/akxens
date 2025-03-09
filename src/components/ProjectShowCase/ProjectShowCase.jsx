@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
-
-
 const ProjectShowcase = () => {
   const containerRef = useRef(null);
   const [progress, setProgress] = useState(0);
@@ -123,11 +121,35 @@ const ProjectShowcase = () => {
   return (
     <div
       ref={containerRef}
-      className="relative"
+      className="relative bg-[#0D161A] rounded-b-4xl"
       style={{ height: `${projects.length * 100}vh` }}
     >
+      <div className="flex max-w-[1350px] text-white  mx-auto">
+        <div className=" font-bold text-5xl pb-5 px-5 w-[40%] ">
+          Case studies
+        </div>
+
+        <div className="flex flex-wrap w-[60%] gap-3 text-sm font-semibold leading-tight">
+          {[
+            "QA & SOFTWARE TESTING",
+            "WEB & MOBILE DEVELOPMENT",
+            "CUSTOM SOFTWARE",
+            "AI/GENAI",
+            "PRODUCT DESIGN",
+            "UI/UX DESIGN",
+            "WEB DEVELOPMENT",
+            "MOBILE APP",
+          ].map((caseStudy, index) => (
+            <div key={index}>
+              <p className="border-1 border-gray-600 hover:border-gray-200 px-3 py-1 rounded-4xl">{caseStudy}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <hr className="mx-2 lg:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800 mt-10" />
+      {/* Background images for each card */}
       {/* Sticky container with bg-black that fills the viewport */}
-      <div className="sticky top-0 h-screen mx-auto bg-black">
+      <div className="sticky top-0 h-screen mx-auto pb-10 rounded-b-4xl mb-20 ">
         {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
