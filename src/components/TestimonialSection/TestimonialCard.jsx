@@ -5,7 +5,7 @@ import QuoteIcon from "../../assets/icon/quote.svg";
 const TestimonialCard = ({ bgColor = "bg-[#FFE060]" }) => {
   return (
     <div
-      className={`group rounded-xl shadow ${bgColor} text-black  flex-shrink-0 px-10 py-8`}
+      className={`group h-96 rounded-xl shadow ${bgColor} text-black  flex-shrink-0 px-10 py-8`}
     >
       <div className="">
         <img className=" w-30 pb-6" src={Logo} alt="" />
@@ -21,7 +21,7 @@ const TestimonialCard = ({ bgColor = "bg-[#FFE060]" }) => {
       >
         {/* <img className="w-20 h-auto bg-[url(QuoteIcon})]" src={QuoteIcon} alt="" /> */}
         <p
-          className="text-zinc-950 leading-relaxed  indent-9 font-medium
+          className="text-zinc-950 leading-relaxed  indent-9 font-medium max-w-[400px]
 "
         >
           Amazing team towork with! I have collaborated with team on multiple

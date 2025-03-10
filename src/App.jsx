@@ -10,6 +10,7 @@ import HowWeBuild from "./components/HowWeBuild/HowWeBuild";
 import Navbar from "./components/Navbar/Navbar";
 import ProjectShowcase from "./components/ProjectShowCase/ProjectShowCase";
 import ServiceWeProvideSection from "./components/serviceWeProvide/ServiceWeProvideSection";
+import Testimonial from "./components/TestimonialSection/Testimonial";
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <ContactMeSection />
         </div>
         <TestimonialSection/>
+        <Testimonial/>
         <Footer />
       </div>
       <div className="container mx-auto"></div>
