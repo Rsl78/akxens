@@ -12,6 +12,7 @@ import ProjectShowcase from "./components/ProjectShowCase/ProjectShowCase";
 import ServiceWeProvideSection from "./components/serviceWeProvide/ServiceWeProvideSection";
 import Testimonial from "./components/TestimonialSection/Testimonial";
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
+import CardScrollAnimation from "./components/About/CardScrollAnimation";
 
 const App = () => {
   return (
@@ -34,6 +35,9 @@ const App = () => {
         </div>
         <TestimonialSection/>
         <Testimonial/>
+        <div className="max-w-[1350px] mx-auto">
+        <CardScrollAnimation/>
+        </div>
         <Footer />
       </div>
       <div className="container mx-auto"></div>
