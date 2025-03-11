@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import AkxensLogo from "../../assets/logoBlack.svg";
+import AkxensLogo from "../../assets/logoWhite.svg";
 import LinkedInIcon from "../../assets/icon/linkedin.svg";
 import FacebookIcon from "../../assets/icon/facebook.svg";
 import InstagramIcon from "../../assets/icon/instagram.svg";
@@ -19,12 +19,18 @@ const Footer = () => {
 
   return (
     <>
-      <hr className="border-0 h-[1px] bg-gray-200" />
-      <footer
+      <hr className="border-0 h-[1px] bg-gray-800" />
+      {/* <footer
         className="
           w-full 
           bg-gradient-to-r from-[#FCF6F2] via-[#FDFAFE] to-[#F9F2FC] 
           text-gray-800
+        "
+      > */}
+      <footer
+        className="
+          w-full 
+          bg-[#0D161A] text-white
         "
       >
         {/* Upper section: four columns */}
@@ -37,13 +43,11 @@ const Footer = () => {
                 onClick={() => handleToggle("services")}
               >
                 Our services
-                
                 <span className="sm:hidden">
                   {activeSection === "services" ? "▲" : "▼"}
                 </span>
               </button>
 
-          
               <ul
                 className={`
                   space-y-5
@@ -141,7 +145,7 @@ const Footer = () => {
         </div>
 
         {/* Lower section: brand, contact, icons, etc. */}
-        <div className="border-t border-gray-200">
+        <div className="border-t border-gray-800">
           <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
             {/* Left side: logo + phone + address */}
             <div className="flex flex-col md:flex-row items-center md:space-x-4 text-sm text-gray-500">

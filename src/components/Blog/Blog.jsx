@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -160,9 +160,9 @@ const Blog = () => {
   const [activeTab, setActiveTab] = useState(blogs[0].name);
 
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto py-20">
       {/* Page Title */}
-      <h1 className="text-4xl text-center font-bold py-10">
+      <h1 className="text-4xl text-center font-bold py-8">
         Browse our latest{" "}
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FAA818] via-[#E0403B] to-[#CE22E0]">
           blog

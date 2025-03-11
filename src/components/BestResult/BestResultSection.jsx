@@ -36,7 +36,7 @@ const BestResultSection = () => {
     ];
     return (
       <div>
-        <h1 className="text-4xl pb-10 font-bold text-center">How Akxens helps you <br /> deliver the best results</h1>
+        <h1 className="text-4xl pt-20 pb-10 font-bold text-center">How Akxens helps you <br /> deliver the best results</h1>
         <div className="px-2 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-0.5 ">
           {cards.map((card) => (
             <ResultCard key={card.id} card={card} />

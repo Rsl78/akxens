@@ -124,12 +124,12 @@ const ProjectShowcase = () => {
       className="relative bg-[#0D161A] rounded-b-4xl"
       style={{ height: `${projects.length * 100}vh` }}
     >
-      <div className="flex max-w-[1350px] text-white  mx-auto">
-        <div className=" font-bold text-5xl pb-5 px-5 w-[40%] ">
+      <div className="flex flex-col md:flex-row max-w-[1350px] text-white  mx-auto">
+        <div className=" font-bold text-5xl pb-5 px-5 md:w-[40%] ">
           Case studies
         </div>
 
-        <div className="flex flex-wrap w-[60%] gap-3 text-sm font-semibold leading-tight">
+        <div className="flex flex-wrap md:w-[60%] gap-3 text-sm font-semibold leading-tight">
           {[
             "QA & SOFTWARE TESTING",
             "WEB & MOBILE DEVELOPMENT",
@@ -146,7 +146,7 @@ const ProjectShowcase = () => {
           ))}
         </div>
       </div>
-      <hr className="mx-2 lg:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800 mt-10" />
+      <hr className="mx-2 2xl:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800 mt-10" />
       {/* Background images for each card */}
       {/* Sticky container with bg-black that fills the viewport */}
       <div className="sticky top-0 h-screen mx-auto pb-10 rounded-b-4xl mb-10 ">
