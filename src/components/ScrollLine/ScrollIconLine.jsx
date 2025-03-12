@@ -52,15 +52,22 @@ function ParallaxText({ children, baseVelocity = 100 }) {
       <motion.div className="scroller flex" style={{ x }}>
         <span className="flex-shrink-0">{children} </span> 
         <span className="flex-shrink-0">{children} </span> 
+        <span className="flex-shrink-0">{children} </span> 
       </motion.div>
     </div>
   );
 }
 
-const ScrollIconLine = ({baseVelocity}) => {
+const ScrollIconLine = ({baseVelocity, direction}) => {
+  let bgDirection;
+  direction === "topToBottom"
+    ? (bgDirection = "bg-gradient-to-b")
+    : (bgDirection = "bg-gradient-to-t");
   return (
     <section className="">
-      <div className="bg-gradient-to-r from-base via-gray-600 to-base py-3">
+      <div
+        className={`${bgDirection} from-[#0D161A] via-[#323639]  to-base py-3`}
+      >
         <ParallaxText baseVelocity={baseVelocity}>
           <div className="flex gap-3 ">
             <img src={AmericanExpressLogo} alt="" />
@@ -79,6 +86,7 @@ const ScrollIconLine = ({baseVelocity}) => {
 
 ScrollIconLine.propTypes = {
   baseVelocity: PropTypes.number,
+  direction: PropTypes.string,
 }
 ParallaxText.propTypes = {
   children: PropTypes.node,

@@ -22,12 +22,12 @@ const App = () => {
       <AboutUs />
       <CustomDevelopmentSection />
       <div className="bg-[#F5F5FB]">
+        <ScrollIconLine baseVelocity={5} direction="topToBottom" />
         <div className="max-w-[1350px] mx-auto ">
-          <ScrollIconLine baseVelocity={5} />
           <BestResultSection />
           <HowWeBuild />
-          <ScrollIconLine baseVelocity={-5} />
         </div>
+        <ScrollIconLine baseVelocity={-5} direction="bottomToTop" />
         <Industries />
         <ProjectShowcase />
         <div className="max-w-[1350px] mx-auto">

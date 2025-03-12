@@ -35,7 +35,7 @@ const Industries = () => {
   };
 
   return (
-    <div className="bg-[#0D161A] backdrop-blur-3xl shadow pb-5 md:pb-20  text-white rounded-t-4xl">
+    <div className="bg-[#0D161A] backdrop-blur-3xl shadow pb-5 md:pb-20  text-white ">
       <div className="flex max-w-[1350px] mx-auto">
         <div className="w-[35%]">
 
