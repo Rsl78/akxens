@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
-import Logo from "../../assets/logoBlack.svg";
 import Img from "../../assets/img/HowWeBuild.webp";
 import QuoteIcon from "../../assets/icon/quote.svg";
-const TestimonialCard = ({ bgColor = "bg-[#FFE060]" }) => {
+const TestimonialCard = ({ testimonial }) => {
   return (
     <div
-      className={`group h-96 rounded-xl shadow ${bgColor} text-black  flex-shrink-0 px-10 py-8`}
+      className={`group h-96 rounded-xl shadow ${testimonial.bgclass} text-black  flex-shrink-0 px-10 py-8`}
     >
       <div className="">
-        <img className=" w-30 pb-6" src={Logo} alt="" />
+        <img className=" w-30 pb-6" src={testimonial.logo} alt="" />
       </div>
 
       <div
@@ -24,28 +23,35 @@ const TestimonialCard = ({ bgColor = "bg-[#FFE060]" }) => {
           className="text-zinc-950 leading-relaxed  indent-9 font-medium max-w-[400px]
 "
         >
-          Amazing team towork with! I have collaborated with team on multiple
-          projects and they have always delivered on time and with high quality.
-          They Provide great communication and are always available to answer
-          any questions. I highly recommend them for any project.
+          {testimonial.feedback}
         </p>
       </div>
 
       <div className="flex items-center mt-5 gap-3">
         <img className="h-10 w-10  rounded-full" src={Img} alt="" />
         <div>
-          <h3 className="text-xl font-bold text-zinc-950">John Doe</h3>
+          <h3 className="text-xl font-bold text-zinc-950">{testimonial.name}</h3>
           <p className="font-semibold text-sm text-zinc-800 ">
-            CEO- Company Name
+           {testimonial.position} at {testimonial.company}
           </p>
         </div>
       </div>
     </div>
   );
+
 };
 
+
+
 TestimonialCard.propTypes = {
-  bgColor: PropTypes.string,
+  testimonial: PropTypes.shape({
+    feedback: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    company: PropTypes.string.isRequired,
+    logo: PropTypes.string.isRequired,
+    bgclass: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default TestimonialCard;
