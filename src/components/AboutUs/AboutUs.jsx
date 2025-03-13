@@ -38,9 +38,6 @@ const AboutUs = () => {
               <AboutUsCard />
               <AboutUsCard />
               <AboutUsCard />
-              <AboutUsCard />
-              <AboutUsCard />
-              <AboutUsCard />
             </div>
           </div>
         </div>
