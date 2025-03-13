@@ -4,14 +4,14 @@ import QuoteIcon from "../../assets/icon/quote.svg";
 const TestimonialCard = ({ testimonial }) => {
   return (
     <div
-      className={`group h-96 rounded-xl shadow ${testimonial.bgclass} text-black  flex-shrink-0 px-10 py-8`}
+      className={`group h-96 rounded-xl shadow ${testimonial.bgclass} text-white  flex-shrink-0 px-10 py-8`}
     >
       <div className="">
         <img className=" w-30 pb-6" src={testimonial.logo} alt="" />
       </div>
 
       <div
-        className="flex items-start space-x-3 bg-contain bg-no-repeat  bg-left-top"
+        className="flex items-start space-x-3 bg-contain bg-no-repeat  bg-left-top text-white "
         style={{
           backgroundImage: `url("${QuoteIcon}")`,
           backgroundSize: "40px 40px",
@@ -20,7 +20,7 @@ const TestimonialCard = ({ testimonial }) => {
       >
         {/* <img className="w-20 h-auto bg-[url(QuoteIcon})]" src={QuoteIcon} alt="" /> */}
         <p
-          className="text-zinc-950 leading-relaxed  indent-9 font-medium max-w-[400px]
+          className="text-white leading-relaxed  indent-9 font-medium max-w-[400px]
 "
         >
           {testimonial.feedback}
@@ -30,8 +30,8 @@ const TestimonialCard = ({ testimonial }) => {
       <div className="flex items-center mt-5 gap-3">
         <img className="h-10 w-10  rounded-full" src={Img} alt="" />
         <div>
-          <h3 className="text-xl font-bold text-zinc-950">{testimonial.name}</h3>
-          <p className="font-semibold text-sm text-zinc-800 ">
+          <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
+          <p className="font-semibold text-sm text-white ">
            {testimonial.position} at {testimonial.company}
           </p>
         </div>
