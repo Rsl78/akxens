@@ -70,17 +70,7 @@ div select {
   /* Firefox */
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #FAA818 !important;
-  /* Change this to your desired color */
-}
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #E0403B !important;
-  /* Change this to your desired hover color */
-}
 
 
 .progress {
@@ -121,3 +111,36 @@ div select {
 /* card style */
 
 
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.4);
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    width: 80px !important;
+    height: 80px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev::after {
+  color: white;
+  font-size: 20px;
+}
+
+.swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #000;
+  padding: 10px;
+  border-radius: 50%;
+  width: 80px !important;
+  height: 80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after {
+  color: white;
+  font-size: 20px;
+}
