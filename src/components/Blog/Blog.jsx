@@ -164,7 +164,7 @@ const Blog = () => {
       {/* Page Title */}
       <h1 className="text-4xl text-center font-bold py-8">
         Browse our latest{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FAA818] via-[#E0403B] to-[#CE22E0]">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#2F80ED] via-[#9B51E0] to-[#E0403B]">
           blog
         </span>{" "}
         articles
@@ -178,7 +178,7 @@ const Blog = () => {
             onClick={() => setActiveTab(category.name)}
             className={`relative text-sm font-semibold whitespace-nowrap transition duration-300 pb-3 after:content-['']  after:absolute after:left-0 after:bottom-0 after:h-[2px] after:transition-all after:duration-500 ${
               activeTab === category.name
-                ? "text-zinc-950 after:w-full after:bg-[#FAA818]"
+                ? "text-zinc-950 after:w-full after:bg-[#2F80ED]"
                 : "text-gray-500 hover:text-zinc-950 after:w-0 after:bg-transparent"
             }
         `}

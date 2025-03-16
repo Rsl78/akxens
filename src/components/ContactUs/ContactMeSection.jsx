@@ -33,7 +33,7 @@ const ContactMeSection = () => {
               <h2 className=" font-primary font-bold text-3xl">
                 drop me a line
               </h2>
-              <div className="w-15 my-1 h-1 bg-[#0D161A]"></div>
+              <div className="w-15 my-1 h-1 bg-[#2F80ED]"></div>
               <p className="pt-2 text-lg leading-7 tracking-tight whitespace-pre-line ">
                 Share your thoughts, projects, or just say hi using the form
                 below I&apos;ll get back to you soon! To know more about me,
