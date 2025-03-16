@@ -7,7 +7,7 @@ const CustomDevelopmentSection = () => {
       <div className="max-w-[1350px] mx-auto ">
         <h1 className="text-white text-2xl md:text-4xl font-bold text-center  pb-10">
           Tailored Custom Development <br /> Solutions{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FAA818] via-[#E0403B] to-[#CE22E0]">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#2F80ED] via-[#9B51E0] to-[#E0403B]">
             for Your Business
           </span>
         </h1>
