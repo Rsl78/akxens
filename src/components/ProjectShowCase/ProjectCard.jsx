@@ -19,6 +19,8 @@ const ProjectCard = ({ project, style, zIndex }) => {
             </h1>
             <h2 className="text-4xl font-bold mb-5">{title}</h2>
             <p className="leading-relaxed">{description}</p>
+
+            
           </div>
           <div className="m-3 relative md:w-[70%]">
             <div className="absolute flex flex-wrap gap-2 top-4 right-4  ">

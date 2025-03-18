@@ -5,7 +5,12 @@ const AboutUs = () => {
   return (
     <div className="bg-[#0D161A]   text-white pt-25 pb-5 md:pb-10">
       {/* Top section */}
-      <div className="flex flex-col lg:flex-row max-w-[1350px] mx-auto gap-2 px-4 sm:px-5">
+      <div className="w-full text-center">
+        <h2 className="text-4xl  font-bold pb-10">
+          How we build the <br />software development process
+        </h2>
+      </div>
+      {/* <div className="flex flex-col lg:flex-row max-w-[1350px] mx-auto gap-2 px-4 sm:px-5">
         <div className="lg:w-[45%] font-bold text-4xl sm:text-5xl pb-5">
           How we build the software development process
         </div>
@@ -16,7 +21,7 @@ const AboutUs = () => {
             with:
           </p>
         </div>
-      </div>
+      </div> */}
       <hr className="mx-2 xl:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800" />
 
       {/* Bottom section */}

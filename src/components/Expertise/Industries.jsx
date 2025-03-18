@@ -90,9 +90,9 @@ const Industries = () => {
 
   return (
     <div className="bg-[#0D161A] backdrop-blur-3xl shadow pb-5 md:pb-20 text-white">
-      <div className="flex max-w-[1350px] mx-auto">
-        <div className="w-[35%]"></div>
-        <h2 className="text-5xl font-bold py-10">
+      
+      <div className="w-full text-center">
+        <h2 className="text-4xl  font-bold py-10">
           Our Expertise for Your <br /> <span className="">Success</span>
         </h2>
       </div>

@@ -13,6 +13,7 @@ import TestimonialSection from "./components/TestimonialSection/TestimonialSecti
 
 import ScrollIconLine from "./components/ScrollLine/ScrollIconLine";
 import AboutUs from "./components/AboutUs/AboutUs";
+// import CardScrollAnimation from "./components/About/CardScrollAnimation";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           <ContactMeSection />
         </div>
         <TestimonialSection />
+        {/* <CardScrollAnimation/> */}
 
         <Footer />
       </div>
