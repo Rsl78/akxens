@@ -203,7 +203,7 @@ const Navbar = () => {
 
         <div>
           <a href="">
-            <button className=" p-2 px-5 rounded-sm font-extrabold bg-[#F8B000] text-black  hover:border  hover:bg-[#FFFFFF]  rounded-pill">
+            <button className=" p-2 px-5 rounded-sm font-medium bg-[#F8B000] text-black  hover:border  hover:bg-[#FFFFFF]  rounded-pill">
               Let&apos;s Chat
             </button>
           </a>
