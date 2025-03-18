@@ -66,7 +66,7 @@ const ScrollIconLine = ({baseVelocity, direction}) => {
   return (
     <section className="">
       <div
-        className={`${bgDirection} from-[#0D161A] via-[#323639]  to-base py-3`}
+        className="bg-zinc-950"
       >
         <ParallaxText baseVelocity={baseVelocity}>
           <div className="flex gap-3 ">

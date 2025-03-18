@@ -96,7 +96,6 @@ const Industries = () => {
           Our Expertise for Your <br /> <span className="">Success</span>
         </h2>
       </div>
-      <hr className="mx-2 2xl:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800" />
       <div className="border-gray-300 h-auto md:h-96 grid grid-cols-1 md:grid-cols-7 mb-20">
         <div className="col-span-1 md:col-span-2 md:ml-[calc((100vw-1350px)/2)] border-b md:border-b-0 md:border-r border-gray-800 p-4">
           <p className="py-10 pr-3 text-m">
