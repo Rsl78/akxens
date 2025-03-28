@@ -26,7 +26,7 @@ const AboutUs = () => {
 
       {/* Bottom section */}
       <div className="w-full px-4 sm:px-8 bg-[#0D161A]">
-        <div className="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-7 border-gray-300">
+        <div className="max-w-[1350px] mx-auto grid grid-cols-1 lg:grid-cols-7 ">
           {/* Left column: text + button */}
           <div className="col-span-1 lg:col-span-2 border-b lg:border-b-0 lg:border-r border-gray-800 p-4">
             <p className="py-10 text-base sm:text-lg">
