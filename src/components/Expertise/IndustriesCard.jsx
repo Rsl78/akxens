@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 const IndustriesCard = ({ name, description, image, className }) => {
   return (
-    <div className={`group rounded-2xl shadow bg-white text-black h-90 w-85 flex-shrink-0 ${className}`}>
+    <div className={`group rounded-2xl shadow bg-white text-black h-75 w-85 flex-shrink-0 ${className}`}>
       {/* Apply rounded-2xl on the container with overflow-hidden */}
       <div className="relative overflow-hidden rounded-2xl">
         <img
           src={image}
           alt="Shoes"
-          className="w-full h-56 transition-transform duration-800 group-hover:scale-110"
+          className="w-full h-42 transition-transform duration-800 group-hover:scale-110"
         />
         {/* Dark overlay appears on hover */}
         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-500"></div>
