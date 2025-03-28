@@ -90,14 +90,14 @@ const Industries = () => {
 
   return (
     <div className="bg-[#0D161A] backdrop-blur-3xl shadow pb-5 md:pb-20 text-white">
-      
       <div className="w-full text-center">
         <h2 className="text-4xl  font-bold py-10">
           Our Expertise for Your <br /> <span className="">Success</span>
         </h2>
       </div>
-      <div className="border-gray-300 h-auto md:h-96 grid grid-cols-1 md:grid-cols-7 mb-20">
-        <div className="col-span-1 md:col-span-2 md:ml-[calc((100vw-1350px)/2)] border-b md:border-b-0 md:border-r border-gray-800 p-4">
+        <hr className="mx-2 xl:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800" />
+      <div className="border-gray-300 h-auto md:h-96 grid grid-cols-1 md:grid-cols-7 2xl:grid-cols-8 mb-20">
+        <div className="col-span-1 md:col-span-2 2xl:col-span-3 md:ml-[calc((100vw-1350px)/2)] border-b md:border-b-0 md:border-r border-gray-800 p-4">
           <p className="py-10 pr-3 text-m">
             Akxens is your one-stop software development company, offering a
             full range of services for all industries. We drive your business
@@ -105,7 +105,7 @@ const Industries = () => {
           </p>
           <Button title="Learn More" />
         </div>
-        <div className="col-span-1 md:col-span-5 pt-10 md:pt-15">
+        <div className="col-span-1 md:col-span-5 2xl:col-span-5 pt-10 md:pt-15">
           <div
             ref={scrollRef}
             onMouseDown={handleMouseDown}

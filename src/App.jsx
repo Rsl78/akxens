@@ -22,7 +22,7 @@ const App = () => {
       <Hero />
       <AboutUs />
       <CustomDevelopmentSection />
-      <div className="bg-[#F5F5FB]">
+      <div className="bg-[#F5F5FB] ">
         <ScrollIconLine baseVelocity={5} direction="topToBottom" />
         <div className="max-w-[1350px] mx-auto ">
           <BestResultSection />

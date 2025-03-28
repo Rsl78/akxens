@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const IndustriesCard = ({ name, description, image, className }) => {
   return (
-    <div className={`group rounded-2xl shadow bg-white text-black w-85 flex-shrink-0 ${className}`}>
+    <div className={`group rounded-2xl shadow bg-white text-black h-90 w-85 flex-shrink-0 ${className}`}>
       {/* Apply rounded-2xl on the container with overflow-hidden */}
       <div className="relative overflow-hidden rounded-2xl">
         <img
