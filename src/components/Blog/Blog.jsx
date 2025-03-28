@@ -171,7 +171,7 @@ const Blog = () => {
       </h1>
 
       {/* Category Tabs */}
-      <div className="flex space-x-12 pb-3 px-3 lg:justify-center overflow-x-auto no-scrollbar">
+      <div className="flex space-x-12 pb-3 px-3 xs:px-0 lg:justify-center overflow-x-auto no-scrollbar">
         {blogs.map((category) => (
           <button
             key={category.name}
@@ -200,7 +200,7 @@ const Blog = () => {
         navigation
         //pagination={{ clickable: true }}
         // autoplay={{ delay: 4000 }}
-        className="mt-8 border "
+        className="mt-8 "
       >
         {blogs
           .find((category) => category.name === activeTab)
