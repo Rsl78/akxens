@@ -1,4 +1,4 @@
-import DiagonalArrowIcon from "../../assets/icon/diagonalArrow.svg";
+import DiagonalArrowIcon from "../../assets/icon/diagonalArrowDark.svg";
 
 const AboutUsCard = () => {
   return (

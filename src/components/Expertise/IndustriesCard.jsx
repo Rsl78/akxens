@@ -1,22 +1,22 @@
-import Icon from "../../assets/icon/locationDark.svg";
+import Icon from "../../assets/icon/locationLight.svg";
 import DiagonalArrowIcon from "../../assets/icon/diagonalArrow.svg";
 import PropTypes from 'prop-types';
 
 const IndustriesCard = ({ name, description, image, className }) => {
   return (
-    <div className={`group rounded-2xl shadow bg-white text-black h-75 w-85 flex-shrink-0 ${className}`}>
+    <div className={`group rounded-2xl shadow bg-white text-black h-80 w-85 flex-shrink-0 ${className}`}>
       {/* Apply rounded-2xl on the container with overflow-hidden */}
       <div className="relative overflow-hidden rounded-2xl">
         <img
           src={image}
           alt="Shoes"
-          className="w-full h-42 transition-transform duration-800 group-hover:scale-110"
+          className="w-full h-50 transition-transform duration-800 group-hover:scale-110"
         />
         {/* Dark overlay appears on hover */}
         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-500"></div>
         {/* Icon overlay at the top right */}
         <div className="absolute top-3 right-3">
-          <img src={Icon} alt="icon" className="w-6 h-6 text-white" />
+          <img src={Icon} alt="icon" className="w-7 h-7 text-white" />
         </div>
         {/* Title overlay remains at the bottom left */}
         <h3 className="absolute bottom-2 left-3 text-white text-xl font-bold bg-opacity-50 px-2 py-1 rounded group-hover:text-[#F9A61A]">

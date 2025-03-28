@@ -97,7 +97,7 @@ const Industries = () => {
       </div>
       <hr className="mx-2 xl:mx-[calc((100vw-1350px)/2)] border-0 h-[1px] bg-gray-800" />
       {/* <div className="border-gray-300 h-auto md:h-96 grid grid-cols-1 md:grid-cols-7 2xl:grid-cols-8 mb-20"> */}
-      <div className="border-gray-300 h-auto md:h-96 flex flex-col md:flex-row  mb-20">
+      <div className="border-gray-300 h-auto md:h-auto flex flex-col md:flex-row  mb-20">
         {/* <div className="col-span-1 md:col-span-2 2xl:col-span-3 md:ml-[calc((100vw-1350px)/2)] border-b md:border-b-0 md:border-r border-gray-800 p-4"> */}
         <div className="md:w-35% w-full md:ml-[calc((100vw-1350px)/2)] border-b md:border-b-0 md:border-r border-gray-800 p-4">
           <p className="py-10 pr-3 text-m">
@@ -108,14 +108,14 @@ const Industries = () => {
           <Button title="Learn More" />
         </div>
         {/* <div className="col-span-1 md:col-span-5 2xl:col-span-5 pt-10 md:pt-15"> */}
-        <div className="md:w-[65%] w-full pt-10 md:pt-15">
+        <div className="md:w-[65%] w-full pt-10 ">
           <div
             ref={scrollRef}
             onMouseDown={handleMouseDown}
             onMouseLeave={handleMouseLeave}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
-            className="flex flex-nowrap space-x-5 overflow-x-scroll 
+            className="flex flex-nowrap space-x-5 overflow-x-scroll overflow-y-hidden 
                      no-scrollbar cursor-grab active:cursor-grabbing 
                      w-full h-full py-3  pl-3 md:pl-20 pr-3 md:pr-[calc((100vw-1350px)/2)]  "
           >
